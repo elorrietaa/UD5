@@ -48,4 +48,16 @@ public class TestSatelite {
 
 	}
 	
+	@Test
+	public void testVariarAltura() {
+		double desplazamiento=-3;
+		
+		Satelite sateliteTest2 = new Satelite(); 
+		sateliteTest2.variarAltura(desplazamiento);
+		
+		assertEquals(sateliteTest2.distancia_tierra, -3, 0);
+		
+	}
+
+	
 }
