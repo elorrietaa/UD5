@@ -27,5 +27,18 @@ public class Satelite {
 	public void variarAltura(double desplazamiento) {
 		distancia_tierra=distancia_tierra+desplazamiento;
 	}
+	
+	public boolean enOrbita(double distancia_tierra)
+	{
+		boolean enOrbita=true;
+		
+		if (distancia_tierra==0)
+			enOrbita=false;
+		else
+			enOrbita=true;
+		
+	return enOrbita;
+
+	}
 }
 
