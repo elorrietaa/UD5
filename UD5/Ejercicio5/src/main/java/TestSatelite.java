@@ -58,6 +58,15 @@ public class TestSatelite {
 		assertEquals(sateliteTest2.distancia_tierra, -3, 0);
 		
 	}
-
+	@Test
+	public void testEnOrbita() {
+		double distancia_tierra=10;
+		
+		Satelite sateliteTest2 = new Satelite(); 
+		sateliteTest2.enOrbita(distancia_tierra);
+		
+		assertEquals(sateliteTest2.enOrbita(distancia_tierra),true);
+		
+	}
 	
 }
